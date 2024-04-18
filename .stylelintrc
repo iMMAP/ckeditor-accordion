@@ -1,6 +1,3 @@
 {
-	"extends": "stylelint-config-ckeditor5",
-	"rules": {
-		"color-no-hex": null
-	  }
+	"extends": "stylelint-config-ckeditor5"
 }
