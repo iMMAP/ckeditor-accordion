@@ -22,13 +22,11 @@ import { MediaEmbed } from '@ckeditor/ckeditor5-media-embed';
 import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
-
-import Accordion from '../src/accordion';
+import Accordion from '../accordion/accordion';
 
 ClassicEditor
 	.create( document.getElementById( 'editor' )!, {
 		plugins: [
-			Accordion,
 			Essentials,
 			Autoformat,
 			BlockQuote,
@@ -49,10 +47,10 @@ ClassicEditor
 			TableToolbar,
 			CodeBlock,
 			Code,
-			Base64UploadAdapter
+			Base64UploadAdapter,
+			Accordion
 		],
 		toolbar: [
-			'accordionButton',
 			'|',
 			'heading',
 			'|',
@@ -73,7 +71,8 @@ ClassicEditor
 			'codeBlock',
 			'|',
 			'undo',
-			'redo'
+			'redo',
+			'accordion'
 		],
 		image: {
 			toolbar: [
