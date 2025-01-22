@@ -7,3 +7,5 @@ export default class AccordionBox extends Plugin {
 		return [ AccordionUi, AccordionEditing ];
 	}
 }
+
+AccordionBox.pluginName = undefined;
